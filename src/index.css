@@ -1,23 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Pacifico&display=swap');
+/* 
+font-family: 'Nunito', sans-serif;
+font-family: 'Pacifico', cursive; */
+
+/* ========================= Root styles ====================== */
+
+:root {
+
+    /* color palette */
+
+    --primary-clr: #DD5D00;
+    --secondary-clr: #2F2F2F;
 
 
-body {
-    font-family: 'Pacifico', cursive;
-}
-
-.logo img{
-    width: 50px;
-}
-
-.logo {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.navbar {
-    display: flex;
-}
-
-.food {
-    width: 30%;
 }
