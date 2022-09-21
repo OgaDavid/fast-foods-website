@@ -1,18 +1,12 @@
 import React from 'react'
-
-const style = {
-  width: "60px",
-  height:"60px"
-}
+import Logo from './Logo'
 
 const Navbar = () => {
   return (
     <header>
        <nav>
         <div className="navbar">
-          <div className="logo">
-            <h1>Fast<span>foods<span><lord-icon style={style} src="https://cdn.lordicon.com/zkazkzgr.json" trigger="loop"></lord-icon></span></span></h1>
-          </div>
+          <Logo />
           <div className="navlinks">
             <ul>
 
@@ -20,10 +14,10 @@ const Navbar = () => {
 
               <li>
                 <div className="services">
-                <a href="#services">Services</a>
+                <a href="#services-section">Services <i class="fa-solid fa-angle-down"></i></a>
                 <div className="dropdown">
                   <div className="dropdown-content">
-                    <div className="tasty-meals dropdown-card">
+                    <div className="dropdown-card">
                         <div className="dropdown-img">
                           <i class="fa-solid fa-utensils fa-2x"></i>
                         </div>
@@ -33,7 +27,7 @@ const Navbar = () => {
                         </div>
                       </div>
 
-                      <div className="fast-delivery dropdown-card">
+                      <div className="dropdown-card">
                         <div className="dropdown-img">
                           <i class="fa-solid fa-truck-fast fa-2x"></i>
                         </div>
@@ -43,7 +37,7 @@ const Navbar = () => {
                         </div>
                       </div>
 
-                      <div className="easy-checkout dropdown-card">
+                      <div className="dropdown-card">
                         <div className="dropdown-img">
                           <i class="fa-solid fa-money-check-dollar fa-2x"></i>
                         </div>
@@ -53,7 +47,7 @@ const Navbar = () => {
                         </div>
                       </div>
 
-                      <div className="money-back dropdown-card">
+                      <div className="dropdown-card">
                         <div className="dropdown-img">
                           <i class="fa-solid fa-shield-halved fa-2x"></i>
                         </div>
@@ -69,7 +63,7 @@ const Navbar = () => {
 
               <li>
                 <div className="new">
-                <a href="#new">New<span><i class="fa-solid fa-fire"></i></span></a>
+                <a href="#new">New<span><i class="fa-solid fa-fire"></i><i class="fa-solid fa-angle-down"></i></span></a>
                 <div className="dropdown">
                   <div className="dropdown-content">
                     <div className="fruits dropdown-card">

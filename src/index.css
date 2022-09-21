@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Pacifico&display=swap');
 /* 
+font-family: 'Inter', sans-serif;
 font-family: 'Nunito', sans-serif;
-font-family: 'Pacifico', cursive; */
+font-family: 'Pacifico', cursive;
+*/
 
 /* ========================= Root styles ====================== */
 
@@ -11,11 +13,10 @@ font-family: 'Pacifico', cursive; */
 
     --primary-clr: #DD5D00;
     --secondary-clr: #2F2F2F;
-    --accent-clr: #211D3E;
+    --accent-clr: #0a0d27;
     --white: #FFFFFF;
     --grey: #EFEFEF;
-
-    margin: 0;
+    --black: #121212;
 
 }
 
@@ -27,10 +28,11 @@ html {
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -41,6 +43,7 @@ a {
 button {
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 ul {
@@ -70,9 +73,6 @@ ul {
     cursor: pointer;
 }
 
-.logo h1 {
-    font-weight: 100;
-}
 
 .navlinks ul {
     display: flex;
@@ -86,12 +86,13 @@ ul {
 }
 
 .logo {
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 .logo h1 {
     color: var(--secondary-clr);
     font-size: 1.5rem;
+    font-weight: 100;
 }
 
 .logo span {
@@ -116,8 +117,8 @@ ul {
 
 .cta-buttons button {
     margin-right: 1.5rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
     cursor: pointer;
 
 }
@@ -167,6 +168,7 @@ padding-right: 4rem;
     font-size: .9rem;
     font-weight: 800;
     transition: all .2s ease-in-out;
+    padding-bottom: .3rem;
 }
 
 .dropdown-card:hover h3{
@@ -174,8 +176,7 @@ padding-right: 4rem;
 }
 
 .dropdown-text p {
-font-size: 
-.8rem;
+font-size: .8rem;
 }
 
 .services:hover .dropdown {
@@ -197,4 +198,228 @@ font-size:
 .dropdown-card {
     display: flex;
     align-items: center;
+}
+
+
+
+/* ===================== Home =================== */
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-right-content img {
+width: 80%;
+position: relative;
+}
+
+.home-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.home-left-content-text {
+    padding-left: 5rem;
+}
+
+.home-left-content-text p {
+    font-size: .9rem;
+    padding-top: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: var(--accent-clr);
+}
+
+.home-left-content-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.home-left-content-buttons button{
+    padding: 1.7rem 2.3rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    background-color: var(--accent-clr);
+    color: var(--white);
+    transition: all .3s ease-in-out;
+}
+
+.home-left-content-buttons button:hover {
+    background-color: #0a0d27ea;
+}
+
+.home-left-content h1 {
+    color: var(--accent-clr);
+}
+
+.home-left h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.home-left-content h1 span {
+    color: var(--secondary-clr);
+}
+
+.home-left-content h1 .your-city {
+    color: var(--primary-clr);
+}
+
+.new-delivery {
+    background-color: var(--accent-clr);
+    border-radius: 10px;
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+.new-delivery-content {
+    display: flex; 
+    padding: .8rem;
+}
+
+.new-delivery i {
+    margin-right: .5rem;
+    color: var(--accent-clr);
+    background-color: var(--grey);
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.new-delivery-text h3 {
+    font-size: .9rem;
+    font-weight: 800;
+    padding-bottom: .2rem;
+}
+
+.new-delivery-text p {
+    font-size: .7rem;
+    color: var(--grey);
+}
+
+
+/* ========================== Services =========================== */
+
+
+.services-section-content-heading {
+    text-align: center;
+}
+
+.services-section-content-heading h1 {
+    font-size: 3rem;
+}
+
+.services-section-content-heading p {
+    color: var(--primary-clr);
+    font-weight: 700;
+}
+
+.services-section {
+    margin-top: 6rem;
+    background-color: var(--grey);
+}
+
+.s-card i {
+    color: var(--primary-clr);
+}
+
+.services-section-content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.services-section-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+.s-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    box-shadow: 2px 4px 21px -2px rgba(0,0,0,0.20);
+    -webkit-box-shadow: 2px 4px 21px -2px rgba(0,0,0,0.20);
+    -moz-box-shadow: 2px 4px 21px -2px rgba(0,0,0,0.20);
+}
+
+.s-card i {
+    padding-bottom: .5rem;
+    color: var(--accent-clr);
+}
+
+.businesses {
+    margin-top:6rem;
+}
+
+.businesses-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.businesses h3 {
+    padding-bottom: 2rem;
+}
+
+
+
+/* =========================== Footer ======================== */
+
+
+.footer {
+    margin-top: 6rem;
+    background-color: var(--black);
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-content {
+    padding: 4rem 3rem;
+    color: var(--grey);
+}
+
+.footer-content p {
+    font-size: .9rem;
+}
+
+.footer-logo {
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    cursor: pointer;
+}
+
+.footer-logo h1 {
+    color: var(--grey);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.footer-logo span {
+    color: var(--primary-clr);
+}
+
+.footer .social-links,
+.mail,
+.address,
+.country {
+    margin-top: 2rem;
+}
+
+.footer .social-links i {
+    padding-right: .5rem;
+    cursor: pointer;
+    color: var(--grey);
+}
+
+.country h3{
+padding-bottom: .5rem;
 }
