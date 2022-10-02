@@ -4,7 +4,7 @@ import Logo from './Logo'
 const Navbar = () => {
   return (
     <header>
-       <nav>
+       <nav id='navbar'>
         <div className="navbar">
           <Logo />
           <div className="navlinks">

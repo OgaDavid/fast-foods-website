@@ -383,8 +383,13 @@ position: relative;
 }
 
 .footer-content {
-    padding: 4rem 3rem;
+    padding: 4rem 5rem;
     color: var(--grey);
+    display: flex;
+    align-items: flex-start;
+    justify-content: baseline;
+    gap: 8rem;
+
 }
 
 .footer-content p {
@@ -422,4 +427,29 @@ position: relative;
 
 .country h3{
 padding-bottom: .5rem;
+}
+
+.footer-right {
+    display: grid;
+    content: '';
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8rem;
+}
+
+.footer-right h3 {
+    padding-bottom: 1rem;
+}
+
+.footer-right ul li:hover {
+    color: var(--primary-clr);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footer-right ul li {
+padding-bottom: .5rem;
+}
+
+.reserved {
+    margin-top: 4rem;
 }
