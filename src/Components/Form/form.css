@@ -1,0 +1,100 @@
+:root {
+
+    /* color palette */
+
+    --primary-clr: #DD5D00;
+    --secondary-clr: #2F2F2F;
+    --accent-clr: #0a0d27;
+    --white: #FFFFFF;
+    --grey: #F9F9F9;
+    --black: #121212;
+
+}
+
+body {
+    background-color: var(--black);
+}
+
+
+/* =======================Register styling============================= */
+
+
+.register-container, .login-container {
+    display: grid;
+    content: '';
+    place-items: center;
+    margin-top: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.logo h1 {
+    color: var(--grey);
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-clr);
+    padding-bottom: 1rem;
+}
+
+.logo {
+    margin-left: 0;
+}
+
+.field label {
+    display: block;
+    font-weight: 600;
+    color: var(--grey);
+    padding-bottom: .5rem;
+}
+
+.field input {
+    padding: .8rem;
+    margin-bottom: .5rem;
+    width: 350px;
+    background-color: var(--secondary-clr);
+    border: none;
+    border-radius: 8px;
+    color: var(--grey);
+    font-family: 'Nunito', sans-serif;
+}
+
+.field input::placeholder {
+    font-weight: 700;
+}
+
+button {
+    background-color: var(--primary-clr);
+    color: var(--grey);
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-container {
+    margin-top: 3rem;
+}
+
+.register-cta {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.register-cta p {
+    color: var(--grey);
+    text-decoration: underline;
+}
+
+.login-container form {
+    border: 1px solid var(--primary-clr);
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 3rem;
+}
+
+.login-container button {
+    padding: .8rem 1rem;
+}
