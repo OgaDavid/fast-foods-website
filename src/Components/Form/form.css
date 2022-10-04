@@ -13,6 +13,7 @@
 
 body {
     background-color: var(--black);
+    overflow-x: hidden;
 }
 
 
@@ -25,6 +26,7 @@ body {
     place-items: center;
     margin-top: 1rem;
     font-family: 'Nunito', sans-serif;
+    padding-bottom: 5rem;
 }
 
 .logo h1 {
@@ -39,7 +41,7 @@ body {
 }
 
 .logo {
-    margin-left: 0;
+    margin-left: 1rem;
 }
 
 .field label {
@@ -52,7 +54,7 @@ body {
 .field input {
     padding: .8rem;
     margin-bottom: .5rem;
-    width: 350px;
+    width: 100%;
     background-color: var(--secondary-clr);
     border: none;
     border-radius: 8px;
@@ -86,15 +88,45 @@ button {
 .register-cta p {
     color: var(--grey);
     text-decoration: underline;
+    padding-left: 2rem;
 }
 
 .login-container form {
-    border: 1px solid var(--primary-clr);
-    border-radius: 10px;
     margin-top: 1rem;
-    padding: 3rem;
 }
 
 .login-container button {
     padding: .8rem 1rem;
+}
+
+.field {
+    position: relative;
+}
+
+.field span {
+    color: red;
+    font-size: .8rem;
+    display: none;
+}
+
+input:invalid ~ span {
+    display: block;
+}
+
+
+
+
+/* =============== media queries================== */
+
+
+@media(max-width: 430px) {
+    .heading {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
+    .field {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
 }

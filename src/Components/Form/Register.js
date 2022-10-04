@@ -14,18 +14,19 @@ const Register = () => {
                 placeholder={input.placeholder}
                 type={input.type}
                 htmlFor={input.htmlFor}
+                errorMsg={input.errorMsg}
             />
         )
     }
     return(
         <div className="register-container">
             <Logo/>
-            <h1 className="heading">👋 Welcome to Fast foods</h1>
+            <h1 className="heading">👋Welcome to Fast foods</h1>
             <form action="submit">
                 {registerData.map(input)}
                 <div className="register-cta">
                     <button type='submit'>Sign up</button>
-                    <p><a href='/'>Already have an account? LOGIN</a></p>
+                    <p><a href='/'>Do you have an account? LOGIN</a></p>
                 </div>
             </form>
         </div>
