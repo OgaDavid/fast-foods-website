@@ -1,2 +1,1 @@
-
-# Fast Foods Ecommerce Website
+# Fast Foods

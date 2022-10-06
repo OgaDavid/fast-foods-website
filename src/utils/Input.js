@@ -1,12 +1,13 @@
 import React from 'react';
+import { useState } from 'react';
 
 const Input = (props) => {
 
-    const regex = "/[a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}/ig"
+    const [focused, setFocused] = useState(false);
     return(
         <div className="field">
             <label htmlFor={props.htmlFor}>{props.label}</label>
-            <input pattern={regex} type={props.type} placeholder={props.placeholder}/>
+            <input pattern={props.pattern} type={props.type} placeholder={props.placeholder} onBlur={() =>{setFocused(true)}} focused={focused.toString()}/>
             <span>{props.errorMsg}</span>
         </div>
     )

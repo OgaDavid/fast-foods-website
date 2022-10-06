@@ -15,14 +15,18 @@ const Register = () => {
                 type={input.type}
                 htmlFor={input.htmlFor}
                 errorMsg={input.errorMsg}
+                pattern={input.pattern}
             />
         )
+    }
+    function handleSubmit(e) {
+        e.preventDefault();
     }
     return(
         <div className="register-container">
             <Logo/>
             <h1 className="heading">👋Welcome to Fast foods</h1>
-            <form action="submit">
+            <form action="submit" onSubmit={handleSubmit}>
                 {registerData.map(input)}
                 <div className="register-cta">
                     <button type='submit'>Sign up</button>

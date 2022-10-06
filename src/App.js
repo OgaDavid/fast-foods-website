@@ -11,13 +11,13 @@ import Login from "./Components/Form/Login";
 function App() {
   return (
     <div className="App">
-      {/* <Banner />
+      <Banner />
       <Navbar />
       <Home />
       <Services/>
-      <Footer /> */}
-      <Register/>
-      {/* <Login/> */}
+      <Footer />
+      {/* <Register/>
+      <Login/> */}
     </div>
   );
 }

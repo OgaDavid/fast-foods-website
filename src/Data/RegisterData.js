@@ -5,8 +5,8 @@ const registerData = [
         placeholder: "Your First name",
         htmlFor: "fname",
         type: "text",
-        errorMsg: "First name should be 3-16 characters with no special characters",
-        pattern: "[a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}$",
+        errorMsg: "Requires 3-16 Characters with no special characters.",
+        pattern: "[A-Za-z ',.-]{2,16}",
         required:true
     },
     {
@@ -15,8 +15,8 @@ const registerData = [
         placeholder: "Your Last name",
         htmlFor: "lname",
         type: "text",
-        errorMsg: "Last name should be 3-16 characters with no special characters",
-
+        errorMsg: "Requires 3-16 characters with no special characters.",
+        pattern: "[A-Za-z',.-]{2,16}",
         required:true
     },
     {
@@ -25,7 +25,7 @@ const registerData = [
         placeholder: "Your Email",
         htmlFor: "email",
         type: "email",
-        errorMsg: "Enter a valid Email Address",
+        errorMsg: "Invalid Email Address!",
 
         required:true
     },
@@ -34,9 +34,9 @@ const registerData = [
         label: "Password",
         placeholder: "Password",
         htmlFor: "password",
-        type: "password",
-        errorMsg: "Password should be 6-20 characters and include a special Character",
-
+        type: "text",
+        errorMsg: "Password should be 8 characters or more and include a number and a special Character.",
+        pattern: "[A-Za-z]*[',.-@$!%*?][0-9]{6,}",
         required:true
     },
     {
@@ -45,8 +45,7 @@ const registerData = [
         placeholder: "Confirm Password",
         htmlFor: "confirm-password",
         type: "password",
-        errorMsg: "Passwords do not match",
-
+        errorMsg: "Passwords do not match.",
         required:true
     }
 ]
