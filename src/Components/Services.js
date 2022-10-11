@@ -1,8 +1,6 @@
 import React from 'react'
 import ServicesGrid from '../utils/ServicesGrid'
 import ServiceData from '../Data/ServiceData'
-import BusinessesData from '../Data/BusinessesData'
-import BusinessGrid from '../utils/BusinessGrid'
 
 // mapping service section
 function services(data) {
@@ -13,14 +11,9 @@ function services(data) {
       description={data.description}
     />
   }
-//   mapping business section
-  function businesses(data) {
-    return <BusinessGrid
-        key={data.key}
-        img={data.img}
-    />
-  }
+
 const Services = () => {
+
   return (
     <div className="services-section" id="services-section">
         <div className="services-section-content">
@@ -31,11 +24,6 @@ const Services = () => {
             <div className="services-section-content-grid">
             {ServiceData.map(services)}
             </div>
-            <div className="businesses">
-                <h3>Trusted By</h3>
-                <div className="businesses-container">{BusinessesData.map(businesses)}</div>
-            </div>
-
         </div>
     </div>
   )

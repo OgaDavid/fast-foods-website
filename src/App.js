@@ -5,19 +5,20 @@ import Services from "./Components/Services";
 import Footer from "./Components/Footer";
 import Register from "./Components/Form/Register";
 import Login from "./Components/Form/Login";
-
+import Businesses from "./Components/Businesses";
 
 
 function App() {
   return (
     <div className="App">
-      <Banner />
+      {/* <Banner />
       <Navbar />
       <Home />
+      <Businesses />
       <Services/>
-      <Footer />
-      {/* <Register/>
-      <Login/> */}
+      <Footer /> */}
+      <Register/>
+      {/* <Login/> */}
     </div>
   );
 }

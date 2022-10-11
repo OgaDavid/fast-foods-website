@@ -11,36 +11,25 @@ const registerData = [
     },
     {
         id: 2,
-        label: "Last name",
-        placeholder: "Your Last name",
-        htmlFor: "lname",
-        type: "text",
-        errorMsg: "Requires 3-16 characters with no special characters.",
-        pattern: "[A-Za-z',.-]{2,16}",
-        required:true
-    },
-    {
-        id: 3,
         label: "Email",
         placeholder: "Your Email",
         htmlFor: "email",
         type: "email",
         errorMsg: "Invalid Email Address!",
-
         required:true
     },
     {
-        id: 4,
+        id: 3,
         label: "Password",
         placeholder: "Password",
         htmlFor: "password",
         type: "text",
         errorMsg: "Password should be 8 characters or more and include a number and a special Character.",
-        pattern: "[A-Za-z]*[',.-@$!%*?][0-9]{6,}",
+        pattern: "^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$",
         required:true
     },
     {
-        id: 5,
+        id: 4,
         label: "Confirm Password",
         placeholder: "Confirm Password",
         htmlFor: "confirm-password",

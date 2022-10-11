@@ -93,6 +93,7 @@ ul {
     color: var(--secondary-clr);
     font-size: 1.5rem;
     font-weight: 100;
+    margin-left: 1rem ;
 }
 
 .logo span {
@@ -216,12 +217,13 @@ position: relative;
 }
 
 .home-content {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    text-align: center;
+    align-items: center;
+    margin-top: 3rem;
 }
 
 .home-left-content-text {
-    padding-left: 5rem;
+    /* padding-left: 5rem; */
 }
 
 .home-left-content-text p {
@@ -236,6 +238,7 @@ position: relative;
     display: flex;
     gap: 1rem;
     align-items: center;
+    justify-content: center;
 }
 
 .home-left-content-buttons button{
@@ -244,7 +247,6 @@ position: relative;
     font-size: 1rem;
     font-weight: 700;
     margin-top: 2rem;
-    margin-left: 5rem;
     background-color: var(--accent-clr);
     color: var(--white);
     transition: all .3s ease-in-out;
@@ -259,9 +261,12 @@ position: relative;
 }
 
 .home-left h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    text-align: center;
     line-height: 1.2;
-    font-weight: 700;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+
 }
 
 .home-left-content h1 span {
@@ -358,17 +363,19 @@ position: relative;
 }
 
 .businesses {
-    margin-top:6rem;
+    margin-top:2rem;
 }
 
 .businesses-container {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .businesses h3 {
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 
